@@ -17,11 +17,7 @@
     <link rel="icon" href="<?=base_url();?>/favicon.ico" type="image/x-icon">
     <style media="screen">
     body {
-            background: url(<?=base_url()?>assets/img/login.jpg) no-repeat center center fixed;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
+            background-color: #303030;
          }
     </style>
   </head>
@@ -29,7 +25,7 @@
      <div class="modal fade" id="login-modal" tabindex="-1" role="dialog">
        <div class="modal-dialog">
             <div class="loginmodal-container">
-               <?php if($this->setting->logo){ ?><img src="<?=base_url()?>files/Setting/<?=$this->setting->logo;?>" alt="logo"  style='max-height: 45px; max-width: 200px; margin: 0 auto'><?php } else { ?><img src="<?=base_url()?>assets/img/logo.png" alt="logo"><?php } ?>
+               <?php if($this->setting->logo){ ?><img src="<?=base_url()?>files/Setting/<?=$this->setting->logo;?>" ><?php } else { ?><img src="<?=base_url()?>assets/img/logo.png" alt="logo"><?php } ?>
                <h1><?=label('Loginaccount');?></h1><br>
                <?php if(isset($message)){echo "<div class='red'>".$message."</div>";}?>
                <?php

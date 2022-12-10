@@ -20,19 +20,19 @@ $lang['Revenue'] = "Ingresos";
 // ********************* Auth *********************
 
 $lang['Username'] = "Usuario";
-$lang['Password'] = "Contrasena";
-$lang['PasswordRepeat'] = "Repite Contrasena";
+$lang['Password'] = "Contraseña";
+$lang['PasswordRepeat'] = "Repetir Contraseña";
 $lang['Avatar'] = "Avatar";
-$lang['firstname'] = "Primer Nombre";
-$lang['lastname'] = "Apellido";
+$lang['firstname'] = "Nombre";
+$lang['lastname'] = "Apellidos";
 $lang['Role'] = "Rol";
 $lang['RoleAdimn'] = "Admin";
 $lang['RoleSales'] = "Agente de Ventas";
 $lang['Email'] = "Email";
-$lang['lastActive'] = "ultima actividad";
+$lang['lastActive'] = "Ultima actividad";
 $lang['Login'] = "Entrar";
-$lang['Loginaccount'] = "Ingresa tus datos";
-$lang['login_incorrect'] = "Datos Incorrectos";
+$lang['Loginaccount'] = "Iniciar Sesión";
+$lang['login_incorrect'] = "El nombre de usuario o contraseña son incorrectos";
 $lang['LogOut'] = "Salir";
 $lang['Adduser'] = "Agregar Usuario";
 $lang['users'] = "Usuarios";
