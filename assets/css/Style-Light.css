@@ -202,7 +202,7 @@ a:link{
 }
 
 .modal-header{
-    background-color: #40484E;
+    background-color: #505050;
     color: #FFF;
 }
 
@@ -211,7 +211,7 @@ a:link{
 }
 
 .btn-add{
-   background-color: #40484E;
+   background-color: #505050;
    color: #fff;
    margin-bottom: 100px;
 }
@@ -1264,8 +1264,8 @@ input[type=checkbox]:checked + .label-text:before{
 
 .btn-Year{
    color: #fff;
-   background-color: #40484E;
-   border-color: #40484E;
+   background-color: #505050;
+   border-color: #505050;
    margin-bottom: 20px;
    padding: 5px 20px;
 }

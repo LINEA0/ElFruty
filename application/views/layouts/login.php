@@ -22,7 +22,7 @@
     </style>
   </head>
   <body>
-     <div class="modal fade" id="login-modal" tabindex="-1" role="dialog">
+     <div class="modal fade modalf" id="login-modal" tabindex="-1" role="dialog">
        <div class="modal-dialog">
             <div class="loginmodal-container">
                <?php if($this->setting->logo){ ?><img src="<?=base_url()?>files/Setting/<?=$this->setting->logo;?>" ><?php } else { ?><img src="<?=base_url()?>assets/img/logo.png" alt="logo"><?php } ?>

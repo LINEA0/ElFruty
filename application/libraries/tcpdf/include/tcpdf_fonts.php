@@ -1028,7 +1028,7 @@ class TCPDF_FONTS {
 			$offset += 2;
 			switch ($format) {
 				case 0: { // Format 0: Byte encoding table
-					$offset += 4; // skip length and version/language
+					$offset += 4; // skip length and version/
 					for ($c = 0; $c < 256; ++$c) {
 						if (isset($subsetchars[$c])) {
 							$g = TCPDF_STATIC::_getBYTE($font, $offset);
