@@ -385,7 +385,7 @@ div.dataTables_wrapper{ clear: both; }
   letter-spacing: 1px;
   font-size: 11px;
   text-transform: uppercase;
-  font-family: "Open Sans";
+  font-family: "Lato";
 }
 
 .navbar-brand{
@@ -1581,7 +1581,7 @@ input[type=checkbox]:checked + .label-text:before{
 
 /************************* menu print style ***************************/
 .headline{
-  font-family: 'Kaushan Script', cursive;
+  font-family: "Lato";
   background-color: #e74c3c;
   color: white;
   text-align: center;

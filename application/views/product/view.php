@@ -14,7 +14,6 @@
             <option value=''><?=label("All");?></option>
             <option value="0" <?=$typeF === '0' ? 'selected' : ''; ?>><?=label("Standard");?></option>
             <option value="1" <?=$typeF === '1' ? 'selected' : ''; ?>><?=label("Service");?></option>
-            <option value="2" <?=$typeF === '2' ? 'selected' : ''; ?>><?=label("combination");?></option>
          </select>
          <button type="submit" class="btn btn-default"><?=label("ApplyFilter");?></button>
       </form>
@@ -46,7 +45,7 @@
                        <a class="btn btn-default" href="products/edit/<?=$product->id;?>" data-toggle="tooltip" data-placement="top" title="<?=label('Edit');?>"><i class="fa fa-pencil"></i></a>
                        <?php if($this->user->role === "admin" && $product->type === 0 ){?><a class="btn btn-default" href="javascript:void(0)" onclick="modifystock(<?=$product->id;?>)"><i class="fa fa-tasks" data-toggle="tooltip" data-placement="top"  title='<?=label("ModifyStock");?>'></i></a><?php } ?>
                        <?php if($product->photo){ ?><a class="btn <?=$product->color;?> white open-modalimage"data-id="<?=$product->photo;?>" href="" data-toggle="modal" data-target="#ImageModal"><i class="fa fa-picture-o" data-toggle="tooltip" data-placement="top" title="<?=label('ViewImage');?>"></i></a><?php } ?>
-                       <a class="btn btn-default" href="javascript:void(0)" data-toggle="modal" data-target="#barcode" onclick="productBcode = <?=$product->code;?>"><i class="fa fa-barcode" data-toggle="tooltip" data-placement="top" title="<?=label('printBarcodes');?>"></i></a>
+                       <!-- <a class="btn btn-default" href="javascript:void(0)" data-toggle="modal" data-target="#barcode" onclick="productBcode = <?=$product->code;?>"><i class="fa fa-barcode" data-toggle="tooltip" data-placement="top" title="<?=label('printBarcodes');?>"></i></a> -->
                      </div>
                   </td>
               </tr>
@@ -56,12 +55,6 @@
    </div>
    <!-- Button trigger modal -->
    <button type="button" class="btn btn-add btn-lg" data-toggle="modal" data-target="#Addproduct"><?=label("AddProduct");?></button>
-
-   <div class=" float-right">
-      <a class="btn btn-add btn-xs" href="products/csv"><?=label("DownloadCSV");?></a>
-      <a class="btn btn-add btn-xs" data-toggle="modal" data-target="#ImportProducts"><?=label("UploadCSVfile");?></a>
-      <a class="btn btn-red btn-xs" style="margin-bottom: 100px;" data-toggle="modal" data-target="#PrintMenu"><?=label("PrintMenu");?></a>
-   </div>
 </div>
 <!-- /.container -->
 <?php echo $this->load->view('modals/_imageViewer'); ?>
@@ -444,7 +437,7 @@ function makePrdInvis(id, prd) {
 
 function PrintTicket() {
 
-    printDivCSS = new String ('<link rel="stylesheet" href="<?=base_url();?>assets/css/font-awesome.min.css"><link href="https://fonts.googleapis.com/css?family=Pinyon+Script" rel="stylesheet"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><style>/************************* menu print style ***************************/ .headline { font-family: "Kaushan Script", cursive; background-color: #e74c3c; color: white; text-align: center; padding: 2px 0; margin-top: 10px; position: relative; } .headline::before, .headline::after { content: ""; height: 1px; width: 100%; background-color: #e74c3c; display: block; left: 0; position: absolute; } .headline::before { top: -6px; } .headline::after { bottom: -6px; } .opacity-small { font-size: 30px; opacity: 0.7; filter: Alpha(opacity=70); } .opacity-medium { font-size: 20px; opacity: 0.5; filter: Alpha(opacity=50); } .opacity-large { font-size: 15px; opacity: 0.25; filter: Alpha(opacity=25); } .logo-menu{ margin: 0 auto; padding: 50px 0 0 0; } .grey{ color: #aaa; }@media print { html, body { zoom: 100%; overflow:hidden !important; }}</style>');
+    printDivCSS = new String ('<link rel="stylesheet" href="<?=base_url();?>assets/css/font-awesome.min.css"><link href="https://fonts.googleapis.com/css?family=Pinyon+Script" rel="stylesheet"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><style>/************************* menu print style ***************************/ .headline { font-family: "Lato", cursive; background-color: #e74c3c; color: white; text-align: center; padding: 2px 0; margin-top: 10px; position: relative; } .headline::before, .headline::after { content: ""; height: 1px; width: 100%; background-color: #e74c3c; display: block; left: 0; position: absolute; } .headline::before { top: -6px; } .headline::after { bottom: -6px; } .opacity-small { font-size: 30px; opacity: 0.7; filter: Alpha(opacity=70); } .opacity-medium { font-size: 20px; opacity: 0.5; filter: Alpha(opacity=50); } .opacity-large { font-size: 15px; opacity: 0.25; filter: Alpha(opacity=25); } .logo-menu{ margin: 0 auto; padding: 50px 0 0 0; } .grey{ color: #aaa; }@media print { html, body { zoom: 100%; overflow:hidden !important; }}</style>');
 
     var newWindow = window.open();
     newWindow.document.write(printDivCSS + '<div class="container">' + document.getElementById("printmenusection").innerHTML + '</div>');
@@ -478,7 +471,6 @@ function PrintTicket() {
              <select class="form-control" name="type" id="Type">
                <option value="0"><?=label("Standard");?></option>
                <option value="1"><?=label("Service");?></option>
-               <option value="2"><?=label("combination");?></option>
              </select>
             </div>
             <div class="form-group controls">
@@ -736,7 +728,6 @@ function PrintTicket() {
   </div>
   <!-- /.Modal -->
 
-
   <!-- Modal -->
   <div class="modal fade" id="PrintMenu" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
    <div class="modal-dialog modal-lg" role="document" id="PrintMenu">
@@ -776,7 +767,7 @@ function PrintTicket() {
                            </a>
                          </div>
                          <div class="media-body">
-                           <h4 class="media-heading" style="font-family: 'Kaushan Script', cursive;"><?=$product->name;?> <span class="label label-danger pull-right"><?=number_format((float)$product->price, $this->setting->decimals, '.', '');?> <?=$this->setting->currency;?></span></h4>
+                           <h4 class="media-heading" style="font-family: 'Lato'"><?=$product->name;?> <span class="label label-danger pull-right"><?=number_format((float)$product->price, $this->setting->decimals, '.', '');?> <?=$this->setting->currency;?></span></h4>
                            <div class="grey"><?=$product->description;?></div>
                          </div>
                        </div>

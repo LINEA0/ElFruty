@@ -260,7 +260,7 @@ $lang['Lowinventory'] = "estoques baixos";
 $lang['requiresRegister'] = "requer um registo aberto";
 $lang['Options'] = "opções";
 $lang['NoTables'] = "Esta loja não tem mesas, visite a página da loja para adicionar tabelas";
-$lang['CancelAll'] = "Cancelar&nbsp;Todos";
+$lang['CancelAll'] = "Cerrar Mesa";
 
 // ********************* Sales page *********************
 

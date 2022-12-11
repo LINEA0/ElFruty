@@ -3,7 +3,7 @@
 
    <div class="row" style="margin-top:100px;">
       <div class="row">
-         <h2>Store Zones</h2>
+         <h2 style="padding-bottom: .5em;">Zonas</h2>
       </div>
       <div class="row">
          <?php foreach($zones as $zone): ?>
@@ -12,7 +12,7 @@
          <span data-toggle="modal" data-target="#AddZone" class="zone"><?=!empty($zones) ? '' : label("AddZone");?><i class="fa fa-plus" style="margin-left:0px;"></i></span>
       </div>
       <div class="row">
-         <h2>Store Tables</h2>
+         <h2>Mesas</h2>
       </div>
       <!-- Button trigger modal -->
       <div class="row">

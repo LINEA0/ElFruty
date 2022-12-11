@@ -21,15 +21,15 @@
                <label class="radio-inline">
                  <input type="radio" name="role" id="role" value="admin"> <?=label("RoleAdimn");?>
                </label>
-               <label class="radio-inline">
+               <!-- <label class="radio-inline">
                  <input type="radio" name="role" id="role" value="sales"> <?=label("RoleSales");?>
-               </label>
+               </label> -->
                <label class="radio-inline">
                  <input type="radio" name="role" id="role" value="waiter"> <?=label("Waiter");?>
                </label>
-               <label class="radio-inline">
+               <!-- <label class="radio-inline">
                  <input type="radio" name="role" id="role" value="kitchen"> <?=label("Kitchen");?>
-               </label>
+               </label> -->
             </div>
 
             <div class="form-group" id="Storeslist">

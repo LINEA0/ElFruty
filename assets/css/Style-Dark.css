@@ -17,7 +17,7 @@ body {
    /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
    font-family: 'Lato', sans-serif;
    color: #E4E6E7;
-   background-color: #303030;
+   background-color: #181818;
 }
 
 html {
@@ -82,7 +82,7 @@ body {
 /********* darck theme style ****************/
 
 .form-control {
-   background-color: #555555 !important;
+   background-color: #454545 !important;
    border: 2px solid rgba(238, 238, 238, 0.1);
    color: #E4E6E7;
 }
@@ -91,7 +91,7 @@ body {
 .select2-selection--single,
 .select2-dropdown,
 .select2-selection__rendered {
-   background-color: #555555 !important;
+   background-color: #454545 !important;
    color: #E4E6E7 !important;
    border: 1px solid rgba(238, 238, 238, 0.1) !important;
 }
@@ -108,11 +108,11 @@ body {
 .table>thead>tr.active>th,
 .table>thead>tr>td.active,
 .table>thead>tr>th.active {
-   background-color: #555555;
+   background-color: #454545;
 }
 
 .modal-content {
-   background-color: #303030;
+   background-color: #181818;
 }
 
 #ticketModal .modal-content {
@@ -125,7 +125,7 @@ body {
 }
 
 .odd {
-   background-color: #555555 !important;
+   background-color: #454545 !important;
 }
 
 .table-bordered>tbody>tr>td,
@@ -145,7 +145,7 @@ body {
 .nav-tabs>li.active>a:focus,
 .nav-tabs>li.active>a:hover {
    color: #E4E6E7;
-   background-color: #555555;
+   background-color: #454545;
    border: 1px solid rgba(238, 238, 238, 0.1);
 }
 
@@ -259,7 +259,7 @@ a:link {
 }
 
 .whiteBg {
-   background-color: #555555;
+   background-color: #454545;
 }
 
 .text-left {
@@ -484,7 +484,7 @@ div.dataTables_wrapper {
 .messageVide {
    font-size: 30px;
    width: 100%;
-   background-color: #7E888E;
+   background-color: #898989;
    padding: 1.5em 0;
    border-radius: 5px;
    font-weight: lighter;
@@ -514,10 +514,12 @@ div.dataTables_wrapper {
    letter-spacing: 1px;
    font-size: 11px;
    text-transform: uppercase;
-   font-family: "Open Sans";
+   font-family: "Lato";
 }
 
 .navbar-brand {
+   padding-top: 0px;
+   padding-left: 30px;
    margin-right: 50px;
    margin-top: -8px;
 }
@@ -527,7 +529,7 @@ div.dataTables_wrapper {
 }
 
 .navbar {
-   background-color: #424242;
+   background-color: #353535;
    border: none;
    -webkit-box-shadow: 0px 3px 18px 0px rgba(0, 0, 0, 0.3);
    -moz-box-shadow: 0px 3px 18px 0px rgba(0, 0, 0, 0.3);
@@ -535,6 +537,7 @@ div.dataTables_wrapper {
 }
 
 .navbar-default .navbar-nav>li>a {
+
    color: #E4E6E7;
 }
 
@@ -559,11 +562,11 @@ div.dataTables_wrapper {
 /*******************************left side style*******************************/
 
 .left-side {
-   background-color: #424242;
+   background-color: #353535;
    border-radius: 5px;
    padding-bottom: 20px;
    margin-bottom: 150px;
-   border: 3px solid #303030;
+   border: 3px solid #181818;
 }
 
 /*top section*/
@@ -603,7 +606,7 @@ div.dataTables_wrapper {
 }
 
 .delete-product {
-   color: #f65e48;
+   color: #e74c3c;
    margin-top: 1px;
 }
 
@@ -638,7 +641,7 @@ div.dataTables_wrapper {
 .total-input {
    border: none;
    outline: none;
-   background-color: #555555;
+   background-color: #454545;
 }
 
 /*******************************right side style*******************************/
@@ -648,7 +651,7 @@ div.dataTables_wrapper {
    text-align: center;
    margin: 5px 1px;
    padding: 2px 13px;
-   background-color: #4C5261;
+   background-color: #646464;
    border-radius: 3px;
    color: #E4E6E7;
    text-transform: uppercase;
@@ -661,18 +664,18 @@ div.dataTables_wrapper {
 
 .Hold span {
    font-size: 12px;
-   color: #b9b2b2;
+   color: #f1f1f1;
    margin-left: 8px;
 }
 
 .selectedHold {
-   background-color: #35B8E0;
+   background-color: #afafaf;
    color: #E2E2E2;
-   border-bottom: 3px solid #f65e48;
+   border-bottom: 3px solid #e74c3c;
 }
 
 .pl {
-   background-color: #303030;
+   background-color: #181818;
    color: #fff;
    border-bottom: 3px solid #101417;
 }
@@ -683,7 +686,7 @@ div.dataTables_wrapper {
    text-align: center;
    margin: 5px 0;
    padding: 10px 20px;
-   background-color: #4C5261;
+   background-color: #646464;
    border-radius: 3px;
    color: #E4E6E7;
    text-transform: uppercase;
@@ -694,9 +697,9 @@ div.dataTables_wrapper {
 }
 
 .selectedGat {
-   background-color: #35B8E0;
+   background-color: #afafaf;
    color: #E2E2E2;
-   border-bottom: 3px solid #f65e48;
+   border-bottom: 3px solid #e74c3c;
 }
 
 /*search bar styling*/
@@ -721,10 +724,10 @@ div.dataTables_wrapper {
 
 /*product section styling*/
 .right-side {
-   background-color: #424242;
+   background-color: #353535;
    border-radius: 5px;
    padding-bottom: 20px !important;
-   border: 3px solid #424242;
+   border: 3px solid #353535;
    overflow: hidden;
 }
 
@@ -747,7 +750,7 @@ div.dataTables_wrapper {
 .product img {
    width: 120px;
    height: 120px;
-   opacity: 0.3;
+   opacity: 0.5;
    margin-top: -91px;
    position: absolute;
    left: 0;
@@ -1034,7 +1037,7 @@ input[type=password] {
    border: 0px;
    color: #fff;
    text-shadow: 0 1px rgba(0, 0, 0, 0.1);
-   background-color: #8a2427;
+   background-color: #e74c3c;
    padding: 1em 0px;
    font-size: 14px;
 }
@@ -1125,13 +1128,13 @@ div.dataTables_paginate ul.pagination {
 .dataTables_paginate li.paginate_button.next.disabled a {
    color: #DDD;
    border: 0;
-   background-color: #303030;
+   background-color: #181818;
 
 }
 
 .dataTables_paginate li.paginate_button a {
    height: 25px;
-   background-color: #303030;
+   background-color: #181818;
    line-height: 25px;
    padding-top: 0px;
    color: #DDD;
@@ -1145,7 +1148,7 @@ div.dataTables_paginate ul.pagination {
 }
 
 .dataTables_paginate li.paginate_button.active a {
-   background: #555555;
+   background: #454545;
    color: #11A7DB;
    border: 0;
 }
@@ -1383,7 +1386,7 @@ a.paginate_enabled_next:hover {
 .statCart {
    padding: 20px 25px;
    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.29);
-   background-color: #2F3E47;
+   background-color: #474747;
 }
 
 .Statcolor01 {
@@ -1415,6 +1418,11 @@ a.paginate_enabled_next:hover {
 }
 
 .statCart span {
+   font-weight: lighter;
+}
+
+.statCart span.count {
+   font-size: 36px;
    font-weight: lighter;
 }
 
@@ -1508,12 +1516,12 @@ a.paginate_enabled_next:hover {
 .row-horizon::-webkit-scrollbar-track {
    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
    border-radius: 10px;
-   background-color: #303030;
+   background-color: #181818;
 }
 
 .row-horizon::-webkit-scrollbar {
    height: 8px;
-   background-color: #303030;
+   background-color: #181818;
 }
 
 
@@ -1752,7 +1760,7 @@ a.paginate_enabled_next:hover {
 
 .cbp-vimenu li a:hover,
 .cbp-vimenu li:first-child a {
-   background: #F65E48;
+   background: #e74c3c;
    color: #fff;
 }
 
@@ -1778,7 +1786,7 @@ a.paginate_enabled_next:hover {
 }
 
 .table-striped>tbody>tr:nth-of-type(odd) {
-   background-color: #555555;
+   background-color: #454545;
 }
 
 .table>tbody>tr.warning>td,
@@ -1793,7 +1801,7 @@ a.paginate_enabled_next:hover {
 .table>thead>tr.warning>th,
 .table>thead>tr>td.warning,
 .table>thead>tr>th.warning {
-   background-color: #555555 !important;
+   background-color: #454545 !important;
 }
 
 /************************************* resto adding *****************************************/
@@ -1801,7 +1809,7 @@ a.paginate_enabled_next:hover {
 .zone {
    padding: 6px 10px;
    border-radius: 15px;
-   background-color: #ACB8B4;
+   background-color: #454545;
    margin: 0 2px;
    color: #fff;
    position: relative;
@@ -1925,7 +1933,7 @@ a.paginate_enabled_next:hover {
 
 /************************* menu print style ***************************/
 .headline {
-   font-family: 'Kaushan Script', cursive;
+   font-family: "Lato";
    background-color: #e74c3c;
    color: white;
    text-align: center;

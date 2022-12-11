@@ -62,23 +62,23 @@
       }
    }
 
-   // function opennewregister(){
-   //    var CashinHand = $('#CashinHand').val();
-   //    var store = $('#store').val();
-   //    $.ajax({
-   //        url : "<?php echo site_url('pos/openregister')?>",
-   //        type: "POST",
-   //        data: {cash: CashinHand, store: store, waitersCach: waitersCach},
-   //        success: function(data)
-   //        {
-   //           window.location.href = "<?php echo site_url('pos/openregister/')?>/" + store;
-   //        },
-   //        error: function (jqXHR, textStatus, errorThrown)
-   //        {
-   //           alert("error");
-   //        }
-   //    });
-   // }
+   function opennewregister(){
+      var CashinHand = $('#CashinHand').val();
+      var store = $('#store').val();
+      $.ajax({
+          url : "<?php echo site_url('pos/openregister')?>",
+          type: "POST",
+          data: {cash: CashinHand, store: store, waitersCach: waitersCach},
+          success: function(data)
+          {
+             window.location.href = "<?php echo site_url('pos/openregister/')?>/" + store;
+          },
+          error: function (jqXHR, textStatus, errorThrown)
+          {
+             alert("error");
+          }
+      });
+   }
    $(function() {
       $('#cachIH').submit(function(event){
          var CashinHand = $('#CashinHando').val();
@@ -135,9 +135,9 @@
          <ul class="cbp-vimenu">
          	<li data-toggle="tooltip"  data-html="true" data-placement="left" title="<?=label('CloseRegister');?>"><a href="javascript:void(0)" onclick="CloseRegister()"><i class="fa fa-times" aria-hidden="true"></i></a></li>
           <li data-toggle="tooltip"  data-html="true" data-placement="left" title="<?=label('SwitchStore');?>"><a href="pos/switshregister"><i class="fa fa-random" aria-hidden="true"></i></a></li>
-         	<li data-toggle="tooltip"  data-html="true" data-placement="left" title="<?=label('Kitchenpage');?>"><a href="kitchens"><i class="fa fa-cutlery" aria-hidden="true"></i></a></li>
+         	<!-- <li data-toggle="tooltip"  data-html="true" data-placement="left" title="<?=label('Kitchenpage');?>"><a href="kitchens"><i class="fa fa-cutlery" aria-hidden="true"></i></a></li> -->
          </ul>
-         <a class="btn btn-green float-right" style="margin-top:60px" href="pos/selectTable/0"><?=label("WalkinCustomer");?></a>
+         <!-- <a class="btn btn-green float-right" style="margin-top:60px" href="pos/selectTable/0"><?=label("WalkinCustomer");?></a> -->
          <?=!$zones ? '<h4 style="margin-top:60px">'.label("NoTables").'</h4>' : '';?>
          <?php foreach ($zones as $zone):?>
          <div class="row">
@@ -156,6 +156,7 @@
             <?php } ?>
             <?php endforeach;?>
          </div>
+         <br>
       <?php endforeach;?>
 
 <?php
@@ -164,13 +165,13 @@
    <!-- *************************************************** if a table was choosen ********************************** -->
 <div class="container-fluid">
    <div class="row text-center">
-      <h3 style="font-family: 'Kaushan Script', cursive;"><?=$header;?></h3>
+      <h3 style="font-family: 'Lato'"><?=$header;?></h3>
    </div>
    <div class="row">
       <ul class="cbp-vimenu2">
       	<li data-toggle="tooltip"  data-html="true" data-placement="left" title="<?=label('CancelAll');?>"><a href="javascript:void(0)" onclick="CloseTable()"><i class="fa fa-times" aria-hidden="true"></i></a></li>
       	<li data-toggle="tooltip"  data-html="true" data-placement="left" title="<?=label('Return');?>"><a href="pos/switshtable"><i class="fa fa-reply" aria-hidden="true"></i></a></li>
-        <li data-toggle="tooltip"  data-html="true" data-placement="left" title="<?=label('Kitchenpage');?>"><a href="kitchens"><i class="fa fa-cutlery" aria-hidden="true"></i></a></li>
+
       </ul>
       <div class="col-md-5 left-side">
          <div class="row">
@@ -180,6 +181,8 @@
                </span>
                <span class="Hold pl" onclick="AddHold()">+</i></span>
                <span class="Hold pl" onclick="RemoveHold()">-</span>
+               <span class="Hold pl" onclick="CloseTable()"><a href="javascript:void(0)" onclick="CloseTable()"><i class="fa fa-times" aria-hidden="true"></i></a></span>
+               
             </div>
          </div>
          <div class="col-xs-8">
@@ -192,12 +195,12 @@
                   <i class="fa fa-user-plus fa-stack-1x fa-inverse dark-blue"></i>
                </span>
             </a>
-            <a href="javascript:void(0)" onclick="showticket()">
+            <!-- <a href="javascript:void(0)" onclick="showticket()">
                <span class="fa-stack fa-lg" data-toggle="tooltip" data-placement="top" title="<?=label('ShowlastReceipt');?>">
                   <i class="fa fa-square fa-stack-2x grey"></i>
                   <i class="fa fa-ticket fa-stack-1x fa-inverse dark-blue"></i>
                </span>
-            </a>
+            </a> -->
          </div>
          <div class="col-sm-6">
             <select class="js-select-options form-control" id="customerSelect">

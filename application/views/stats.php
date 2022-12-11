@@ -204,7 +204,7 @@
 
 </div>
 <!--[ footer ] -->
-<div id="footer" style="background-color: #8297A8;width: 100%;">
+<div id="footer" style="background-color: #d69830;width: 100%;">
   <div class="container">
     <p class="footer-block" style="margin: 20px 0;color:#fff;"><?=label('title');?> <?= $this->setting->companyname;?>.</p>
   </div>

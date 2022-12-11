@@ -39,9 +39,9 @@ $lang['users'] = "Usuarios";
 
 // ********************* Menu *********************
 
-$lang['POS'] = "TPV";
+$lang['POS'] = "Punto de Venta";
 $lang['Product'] = "Productos";
-$lang['Setting'] = "Ajustes";
+$lang['Setting'] = "Usuarios";
 $lang['Categories'] = "Categorias";
 $lang['Customers'] = "Clientes";
 $lang['Sales'] = "Ventas";
@@ -84,7 +84,7 @@ $lang['combination'] = "combinación";
 $lang['combinations'] = "combinaciones";
 $lang['NoProduct'] = "No se encontraron coincidencias";
 $lang['Modify'] = "Modificar";
-$lang['All'] = "Todas";
+$lang['All'] = "Todos";
 $lang['Unit'] = "Unidad producto";
 $lang['inclusive'] = "inclusivo";
 $lang['exclusive'] = "exclusivo";
@@ -106,13 +106,13 @@ $lang['Expences'] = "Gastos";
 $lang['ViewFile'] = "Ver archivo";
 $lang['Reference'] = "Referencia";
 $lang['Amount'] = "Cantidad";
-$lang['Store'] = "Almacenar";
+$lang['Store'] = "Sucursal";
 $lang['AddExpence'] = "Añadir Gasto";
 $lang['Attachment'] = "Adjunto archivo";
 $lang['AttachmentInfos'] = "Archivos Aceptados (imágenes | pdf | doc | xls | zip): Tamaño máximo : 2Mb";
 
 // ********************* Stores page *********************
-$lang['Stores'] = "Víveres";
+$lang['Stores'] = "Comedor";
 $lang['AddStore'] = "Añadir tienda";
 $lang['StoreName'] = "Nombre de la tienda";
 $lang['StorePhone'] = "teléfono de la tienda";
@@ -165,7 +165,7 @@ $lang['WaiterPhone'] = "Teléfono";
 $lang['WaiterEmail'] = "Email";
 $lang['WaiterStore'] = "Almacenar";
 $lang['AddWaiter'] = "Añadir camarero";
-$lang['Waiters'] = "Los camareros";
+$lang['Waiters'] = "Camareros";
 $lang['Waiter'] = "Camarero";
 
 // ********************* Supplier page *********************
@@ -179,13 +179,13 @@ $lang['Supplier'] = "Proveedor";
 
 $lang['Return'] = "Regreso";
 $lang['RegisterDetails'] = "Registro Detalles";
-$lang['CloseRegister'] = "cerca&nbsp;registrarse";
+$lang['CloseRegister'] = "cerrado&nbsp;registrarse";
 $lang['SwitchStore'] = "conmutar&nbsp;tienda";
 $lang['open'] = "Abierto";
 $lang['Stillopen'] = "Sigue abierto";
-$lang['close'] = "Cerca";
+$lang['close'] = "Cerrado";
 $lang['closedat'] = "Tiempo de cierre";
-$lang['ChooseStore'] = "Elige una tienda";
+$lang['ChooseStore'] = "Bienvenido";
 $lang['PayementType'] = "Tipo de pago";
 $lang['EXPECTED'] = "Esperado";
 $lang['COUNTED'] = "contados";
@@ -195,7 +195,7 @@ $lang['Openingtime'] = "Tiempo de apertura";
 $lang['Openedby'] = "Abierto por";
 $lang['note'] = "Nota";
 $lang['CashinHand'] = "saldo en efectivo";
-$lang['CloseMessageRegister'] = "Usted no será capaz de recuperar las bodegas más tarde!";
+$lang['CloseMessageRegister'] = "No seras capaz de regresar";
 $lang['yesClose'] = "Sí, Ciérralo!";
 $lang['TotalRevenue'] = "Los ingresos totales";
 $lang['ClosedRegister'] = "Este registro se eliminó por";
@@ -217,7 +217,7 @@ $lang['GrandTotal'] = "Grand Total";
 $lang['Paid'] = "Pagado";
 $lang['Change'] = "Vuelto";
 $lang['Tel'] = "Tel:";
-$lang['ShowlastReceipt'] = "Ver ultima boleta";
+$lang['ShowlastReceipt'] = "Ver ultimo recibo";
 $lang['BarcodeScanner'] = "Lector de Productos";
 $lang['Product'] = "Producto";
 $lang['price'] = "Precio";
@@ -229,8 +229,8 @@ $lang['PAYEMENT'] = "PROCESAR VENTA";
 $lang['Search'] = "Buscar";
 $lang['EmptyList'] = "NO HAY PRODUCTOS";
 $lang['SelectProduct'] = "Selecciona una producto para empezar";
-$lang['INVOICE'] = "BOLETA";
-$lang['invoice'] = "boleta";
+$lang['INVOICE'] = "FACTURA";
+$lang['invoice'] = "factura";
 
 //---- Add Sale
 
@@ -261,7 +261,7 @@ $lang['Lowinventory'] = "Bajo inventario";
 $lang['requiresRegister'] = "requiere un registro abierto";
 $lang['Options'] = "opciones";
 $lang['NoTables'] = "Esta tienda tiene ninguna tabla, por favor visite la página de la tienda para añadir tablas";
-$lang['CancelAll'] = "Cancelar&nbsp;Todas";
+$lang['CancelAll'] = "Cancelar&nbsp;Todos";
 
 // ********************* Sales page *********************
 
@@ -280,8 +280,8 @@ $lang['AddPayements'] = "agregar pagos";
 // ********************* Report page *********************
 
 $lang['Customers'] = "Clientes";
-$lang['in'] = "in";
-$lang['TodaySale'] = "Ventas HOY";
+$lang['in'] = " en";
+$lang['TodaySale'] = "Ventas de Hoy";
 $lang['monthlyStats'] = "estadisticas mensuales";
 $lang['TopProducts'] = "5 Productos TOP este a�o";
 $lang['ClientsStats'] = "Estadisticas de Clientes";
