@@ -1,6 +1,6 @@
   <div class="container">
 
-    <h3><?=label('Expence');?></h3>
+    <h3><?=label('Gastos');?></h3>
     <br />
     <br />
     <table id="table" class="table table-striped table-bordered" cellspacing="0" width="100%">

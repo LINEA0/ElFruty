@@ -27,7 +27,7 @@ error_reporting(E_ALL); //Setting this to E_ALL showed that that cause of not re
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
-				color: #34495e;
+				color: #4a4a4a;
 				font-family: 'Lato', sans-serif;
          }
 			.installmodal-container {
@@ -50,13 +50,13 @@ error_reporting(E_ALL); //Setting this to E_ALL showed that that cause of not re
 			.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
 				background: none;
 				border: none;
-				background-color: #34495E;
+				background-color: #4a4a4a;
 				color: white;
 				border-radius: 3px;
 			}
 			.nav-tabs>li>a {
 				text-align: center;
-			    color: #34495e;
+			    color: #4a4a4a;
 				 font-weight: 400;
 				 text-transform: uppercase;
 				 border: none;
@@ -79,7 +79,7 @@ error_reporting(E_ALL); //Setting this to E_ALL showed that that cause of not re
 					background-color: #1ABC9C;
 			}
 			.btn-next {
-				background-color: #34495E;
+				background-color: #4a4a4a;
 				color: white;
 				float: right;
 			}

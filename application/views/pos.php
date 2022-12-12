@@ -1047,7 +1047,7 @@ function showticket(){
       <div class="modal-body" id="modal-body">
          <div id="printSection">
             <!-- Ticket goes here -->
-            <center><h1 style="color:#34495E"><?=label("empty");?></h1></center>
+            <center><h1 style="color:#4a4a4a"><?=label("empty");?></h1></center>
          </div>
       </div>
       <div class="modal-footer">
@@ -1072,7 +1072,7 @@ function showticket(){
       <div class="modal-body" id="modal-body">
          <div id="optionsSection">
             <!-- Ticket goes here -->
-            <center><h1 style="color:#34495E"><?=label("empty");?></h1></center>
+            <center><h1 style="color:#4a4a4a"><?=label("empty");?></h1></center>
          </div>
       </div>
       <div class="modal-footer">

@@ -38,9 +38,9 @@ class Expences_controller extends CI_Controller
             // add html for action
             if ($this->user->role === "admin")
                 $row[] = '<div class="btn-group">
-                      <a class="btn btn-default" href="javascript:void(0)" onclick="delete_expences(' . $expence->id . ')" title="' . label("Delete") . '"><i class="fa fa-times"></i></a>
-                      <a class="btn btn-default" href="expences/edit/' . $expence->id . '" title="' . label("Edit") . '"><i class="fa fa-pencil"></i></a>
-                      ' . ($expence->attachment ? '<a class="btn color02 white open-modalimage" target="_blank" href="' . site_url() . 'files/expences/' . $expence->attachment . '" title="' . label("ViewFile") . '"><i class="fa fa-file-archive-o"></i></a>' : '') . '
+                        <a class="btn btn-default" href="javascript:void(0)" onclick="delete_expences(' . $expence->id . ')" title="' . label("Delete") . '"><i class="fa fa-times"></i></a>
+                        <a class="btn btn-default" href="expences/edit/' . $expence->id . '" title="' . label("Edit") . '"><i class="fa fa-pencil"></i></a>
+                        ' . ($expence->attachment ? '<a class="btn color02 white open-modalimage" target="_blank" href="' . site_url() . 'files/expences/' . $expence->attachment . '" title="' . label("ViewFile") . '"><i class="fa fa-file-archive-o"></i></a>' : '') . '
                     </div>';
             else
                 $row[] = '<div class="btn-group"><a class="btn btn-default" href="expences/edit/' . $expence->id . '" title="' . label("Edit") . '"><i class="fa fa-pencil"></i></a>

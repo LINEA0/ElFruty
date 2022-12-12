@@ -1788,7 +1788,7 @@ if (typeof jQuery === 'undefined') {
     placement: 'right',
     trigger: 'click',
     content: '',
-    template: '<div class="popover" role="tooltip"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>'
+    template: '<div class="popover" role="tooltip"><div class="arrow"></div><h4 class="popover-title" style="color:#181818; margin-top:10px;"></h4><div class="popover-content"></div></div>'
   })
 
 

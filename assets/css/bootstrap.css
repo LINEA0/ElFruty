@@ -7580,6 +7580,10 @@ button.close {
   line-break: auto;
 }
 
+.popover h3{
+  color : #181818;
+}
+
 .popover.top {
   margin-top: -10px;
 }
@@ -7603,6 +7607,11 @@ button.close {
   background-color: #f7f7f7;
   border-bottom: 1px solid #ebebeb;
   border-radius: 5px 5px 0 0;
+}
+
+.popover-title h3 {
+  color: #181818;
+  margin-top: 5px;
 }
 
 .popover-content {

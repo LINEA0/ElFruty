@@ -36,7 +36,8 @@
                    <td><?=$table->name;?></td>
                     <td><?=$zones02[$table->zone_id];?></td>
                     <td><div class="btn-group">
-                          <a class="btn btn-default" href="<?=base_url();?>stores/deletetable/<?=$table->id;?>/<?=$storeid;?>" data-toggle="tooltip" data-placement="top" title="<?=label('Delete');?>"><i class="fa fa-times"></i></a>
+                    <?php if ($this->user->role === "admin") { ?><a class="btn btn-default" href="javascript:void(0)" data-toggle="popover" data-placement="left" data-html="true" title='<?= label("Areyousure"); ?>' data-content='<a class="btn btn-danger" href="<?=base_url();?>stores/deletetable/<?=$table->id;?>/<?=$storeid;?>"><?= label("yesiam"); ?></a>'><i class="fa fa-times" style=""></i></a><?php } ?>
+                          <!-- <a class="btn btn-default" href="<?=base_url();?>stores/deletetable/<?=$table->id;?>/<?=$storeid;?>" data-toggle="tooltip" data-placement="top" title="<?=label('Delete');?>"><i class="fa fa-times"></i></a> -->
                           <a class="btn btn-default" href="<?=base_url();?>stores/editTable/<?=$table->id;?>" data-toggle="tooltip" data-placement="top" title="<?=label('Edit');?>"><i class="fa fa-pencil"></i></a>
                        </div>
                      </td>

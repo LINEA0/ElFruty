@@ -32,7 +32,7 @@
                </label> -->
             </div>
 
-            <div class="form-group" id="Storeslist">
+            <!-- <div class="form-group" id="Storeslist">
               <label for="store_id"><?=label("Store");?></label>
                     <select class="form-control" name="store_id" id="store_id">
                       <?php foreach ($stores as $store):?>
@@ -40,7 +40,7 @@
                       <?php endforeach;?>
                     </select>
 
-            </div>
+            </div> -->
            <div class="form-group">
              <label for="email"><?=label("Email");?></label>
              <input type="email" name="email" value="<?=$user->email?>" class="form-control" id="email" placeholder="<?=label("Email");?>">

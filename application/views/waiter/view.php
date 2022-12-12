@@ -7,7 +7,7 @@
                   <th><?=label("WaiterName");?></th>
                   <th><?=label("WaiterPhone");?></th>
                   <th class="hidden-xs"><?=label("WaiterEmail");?></th>
-                  <th class="hidden-xs"><?=label("Store");?></th>
+                  <!-- <th class="hidden-xs"><?=label("Store");?></th> -->
                   <th class="hidden-xs"><?=label("CreatedAt");?></th>
                   <th><?=label("Action");?></th>
               </tr>
@@ -19,7 +19,7 @@
                  <td><?=$waiter->name;?></td>
                  <td><?=$waiter->phone;?></td>
                  <td class="hidden-xs"><?=$waiter->email;?></td>
-                 <td class="hidden-xs"><?=$strs[$waiter->store_id];?></td>
+                 <!-- <td class="hidden-xs"><?=$strs[$waiter->store_id];?></td> -->
                  <td class="hidden-xs"><?=$waiter->created_at;?></td>
                  <td><div class="btn-group">
                        <a class="btn btn-default" href="javascript:void(0)" data-toggle="popover" data-placement="left"  data-html="true" title='<?=label("Areyousure");?>' data-content='<a class="btn btn-danger" href="waiters/delete/<?=$waiter->id;?>"><?=label("yesiam");?></a>'><i class="fa fa-times"></i></a>
@@ -60,7 +60,7 @@
              <label for="WaiterEmail"><?=label("WaiterEmail");?></label>
              <input type="email" maxlength="50" name="email" class="form-control" id="WaiterEmail" placeholder="<?=label("WaiterEmail");?>">
            </div>
-           <div class="form-group" id="supply">
+           <!-- <div class="form-group" id="supply" value= >
              <label for="WaiterStore"><?=label("Store");?></label>
              <select class="form-control" name="store_id" id="WaiterStore" Required>
                <option><?=label("Store");?></option>
@@ -68,7 +68,7 @@
                   <option value="<?=$store->id;?>"><?=$store->name;?></option>
                <?php endforeach;?>
             </select>
-           </div>
+           </div> -->
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal"><?=label("Close");?></button>
