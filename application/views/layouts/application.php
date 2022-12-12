@@ -78,7 +78,7 @@
                      <a href="#" class="dropdown-toggle flat-box" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bookmark"></i> <span class="menu-text"><?= label("Menu"); ?> </span><span class="caret"></span></a>
                      <ul class="dropdown-menu">
                         <li class="flat-box"><a href="<?= base_url() ?>products"><i class="fa fa-archive"></i> <span class="menu-text"><?= label("Productos"); ?></span></a></li>
-                        <li class="flat-box"><a href="<?= base_url() ?>categorie_expences"><i class="fa fa-usd"></i> <span class="menu-text"><?= label("Categories"); ?></span></a></li>
+                        <li class="flat-box"><a href="<?= base_url() ?>categories"><i class="fa fa-usd"></i> <span class="menu-text"><?= label("Categories"); ?></span></a></li>
                      </ul>
                   </li>
                   <li class="flat-box"><a href="<?= base_url() ?>stores/editTables/5"><i class="fa fa-hospital-o"></i> <span class="menu-text"><?= label("Stores"); ?></span></a></li>

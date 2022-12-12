@@ -15,6 +15,7 @@ class Categorie_expences extends MY_Controller
 
     public function index()
     {
+    
         $this->view_data['categories'] = Categorie_expence::all();
         $this->content_view = 'categorie_expence/view';
     }

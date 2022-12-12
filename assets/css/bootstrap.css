@@ -1679,6 +1679,11 @@ mark,
   text-align: center;
 }
 
+div .table-choose {
+  display: flex;
+  justify-content: center;
+}	
+
 .text-justify {
   text-align: justify;
 }

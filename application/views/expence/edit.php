@@ -15,7 +15,7 @@
                 <label for="Reference"><?=label("Reference");?> *</label>
                 <input type="text" name="reference" value="<?=$expence->reference;?>" maxlength="25" Required class="form-control" id="Reference" placeholder="<?=label("Reference");?>">
               </div>
-              <div class="form-group">
+              <!-- <div class="form-group">
                 <label for="Category"><?=label("Category");?></label>
                 <select class="form-control" name="category" id="Category">
                   <option value="0"><?=label("Category");?></option>
@@ -23,8 +23,8 @@
                      <option value="<?=$category->id;?>" <?=$expence->category_id == $category->id ? 'selected' : '';?>><?=$category->name;?></option>
                   <?php endforeach;?>
                </select>
-              </div>
-              <div class="form-group">
+              </div> -->
+              <!-- <div class="form-group">
                 <label for="store_id"><?=label("Store");?></label>
                    <?php if($this->user->role !== "admin"):?>
                          <input type="text" value="<?=$storeName;?>" class="form-control" id="store_id" disabled>
@@ -38,7 +38,7 @@
                      endif;?>
 
                </select>
-              </div>
+              </div> -->
               <div class="form-group">
                 <label for="Amount"><?=label("Amount");?> (<?=$this->setting->currency;?>) *</label>
                 <input type="number" step="any" Required name="amount" value="<?=$expence->amount;?>" class="form-control" id="Amount" placeholder="<?=label("Amount");?>">
@@ -53,7 +53,6 @@
                 <textarea id="summernote" name="note"><?=$expence->note;?></textarea>
               </div>
          </div>
-
      <div class="form-group">
        <button type="submit" class="btn btn-add"><?=label("Submit");?></button>
      </div>

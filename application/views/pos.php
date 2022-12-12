@@ -164,15 +164,12 @@
 
    <!-- *************************************************** if a table was choosen ********************************** -->
 <div class="container-fluid">
-   <div class="row text-center">
-      <h3 style="font-family: 'Lato'"><?=$header;?></h3>
+   <div class="table-choose" style="display: flex; justify-content:space-between; align-items:center;">
+      <h3 style="font-family: 'Lato'; margin-bottom:20px; padding-right: 1em;"><?=$header;?></h3> 
+      <!-- separation of  -->
+      <a class="btn btn-default " href="pos/switshtable" onclick="history.back(-1)"> <?=label("Back");?></a>
    </div>
    <div class="row">
-      <ul class="cbp-vimenu2">
-      	<li data-toggle="tooltip"  data-html="true" data-placement="left" title="<?=label('CancelAll');?>"><a href="javascript:void(0)" onclick="CloseTable()"><i class="fa fa-times" aria-hidden="true"></i></a></li>
-      	<li data-toggle="tooltip"  data-html="true" data-placement="left" title="<?=label('Return');?>"><a href="pos/switshtable"><i class="fa fa-reply" aria-hidden="true"></i></a></li>
-
-      </ul>
       <div class="col-md-5 left-side">
          <div class="row">
             <div class="row row-horizon">

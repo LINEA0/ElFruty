@@ -51,6 +51,7 @@
         ]
       });
 
+
       table = $('#table').DataTable({
 
         "processing": true, //Feature control the processing indicator.
@@ -64,10 +65,7 @@
 
         //Set column definition initialisation properties.
         "columnDefs": [
-        {
-          "targets": [ -1 ], //last column
-          "orderable": false, //set not orderable
-        },
+          { "visible": false, "targets": [3,4] }
         ],
          "bInfo": false,
          // "fnRowCallback": function(nRow, aData, iDisplayIndex) {
@@ -136,7 +134,7 @@
                <label for="Reference"><?=label("Reference");?> *</label>
                <input type="text" name="reference" maxlength="25" Required class="form-control" id="Reference" placeholder="<?=label("Reference");?>">
              </div>
-             <div class="form-group">
+             <!-- <div class="form-group">
                <label for="Category"><?=label("Category");?></label>
                <select class="form-control" name="category" id="Category">
                  <option value="0"><?=label("Category");?></option>
@@ -144,8 +142,8 @@
                     <option value="<?=$category->id;?>"><?=$category->name;?></option>
                  <?php endforeach;?>
               </select>
-             </div>
-             <div class="form-group">
+             </div> -->
+             <!-- <div class="form-group">
                <label for="store_id"><?=label("Store");?></label>
                   <?php if(isset($storeId)):?>
                      <input type="text" value="<?=$storeName;?>" class="form-control" id="store_id" disabled>
@@ -158,8 +156,7 @@
                        <?php endforeach;?>
                        </select>
                    <?php endif;?>
-
-             </div>
+             </div> -->
              <div class="form-group">
                <label for="Amount"><?=label("Amount");?> (<?=$this->setting->currency;?>) *</label>
                <input type="number" step="any" Required name="amount" class="form-control" id="Amount" placeholder="<?=label("Amount");?>">
