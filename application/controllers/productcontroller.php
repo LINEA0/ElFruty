@@ -188,7 +188,7 @@ class Productcontroller extends CI_Controller
              <td><b>'.$quantity.'</b></td>
              <td><b>'.$price.'</b></td>
              <td><label>
-             <input type="checkbox" name="invis" value="1" '.$cheked.' onclick="makePrdInvis('.$store->id.', '.$product->id.')">
+             <input type="checkbox" name="invis" value="1" '. 'checked'.' ">
              <span class="label-text"></span>
              </label></td>
           </tr>';
@@ -365,7 +365,7 @@ class Productcontroller extends CI_Controller
           }
           echo json_encode($pr);
       }else {
-         echo json_encode();
+         echo json_encode(array('item_id' => 0, 'quantity' => 0, 'code' => 0, 'name' => 0));
       }
 
    }

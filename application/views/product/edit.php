@@ -48,9 +48,9 @@ $(function() {
          <div class="form-group">
          <label for="Type"><?=label("Type");?></label>
          <select class="form-control" name="type" id="Type">
-            <option value="0" <?=$product->type === 0 ? 'selected' : '';?>><?=label("Standard");?></option>
+            <!-- <option value="0" <?=$product->type === 0 ? 'selected' : '';?>><?=label("Standard");?></option> -->
             <option value="1" <?=$product->type === 1 || $product->type === null ? 'selected' : '';?>><?=label("Service");?></option>
-            <option value="2" <?=$product->type === 2 ? 'selected' : '';?>><?=label("combination");?></option>
+            <!-- <option value="2" <?=$product->type === 2 ? 'selected' : '';?>><?=label("combination");?></option> -->
          </select>
          </div>
          <div class="form-group">

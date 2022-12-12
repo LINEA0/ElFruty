@@ -87,7 +87,7 @@
                      <ul class="dropdown-menu">
                         <li class="flat-box"><a href="<?= base_url() ?>waiters"><i class="fa fa-user"></i> <span class="menu-text"><?= label("Waiters"); ?></span></a></li>
                         <li class="flat-box"><a href="<?= base_url() ?>customers"><i class="fa fa-user"></i> <span class="menu-text"><?= label("Customers"); ?></span></a></li>
-                        <li class="flat-box"><a href="<?= base_url() ?>suppliers"><i class="fa fa-truck"></i> <span class="menu-text"><?= label("Suppliers"); ?></span></a></li>
+                        <!-- <li class="flat-box"><a href="<?= base_url() ?>suppliers"><i class="fa fa-truck"></i> <span class="menu-text"><?= label("Suppliers"); ?></span></a></li> -->
                      </ul>
                   </li>
                   <li class="flat-box"><a href="<?= base_url() ?>sales"><i class="fa fa-ticket"></i> <span class="menu-text"><?= label("Sales"); ?></span></a></li>
