@@ -235,7 +235,7 @@ $lang['invoice'] = "factura";
 //---- Add Sale
 
 $lang['empty'] = "Vacio";
-$lang['Receipt'] = "Boleta";
+$lang['Receipt'] = "Ticket";
 $lang['AddSale'] = "Procesar Venta";
 $lang['Customer'] = "Cliente";
 $lang['Total'] = "Total";
