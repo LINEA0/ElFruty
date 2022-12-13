@@ -1,23 +1,7 @@
 <!-- Page Content -->
 <div class="container">
    <div class="row" style="margin-top:100px;">
-      <!-- <form action="products" method="post" class="form-inline float-right hidden-xs hidden-sm" style="margin-bottom:-50px;">
-          <label for="Supplier"><?=label("Supplier");?></label>
-         <select class="form-control" id="Supplier" name="filtersupp">
-            <option value=''><?=label("All");?></option>
-            <?php foreach ($suppliers as $supplier):?>
-               <option value="<?=$supplier->name;?>" <?=$supplierF === $supplier->name ? 'selected' : ''; ?>><?=$supplier->name;?></option>
-            <?php endforeach;?>
-         </select> -->
-         <!-- <label for="Producttype">Categor</label>
-         <select class="form-control" id="Producttype" name="filtertype">
-            <option value=''><?=label("All");?></option>
-            <option value="0" <?=$typeF === '0' ? 'selected' : ''; ?>><?=label("Standard");?></option>
-            <option value="1" <?=$typeF === '1' ? 'selected' : ''; ?>><?=label("Service");?></option>
-            <option value="2" <?=$typeF === '2' ? 'selected' : ''; ?>><?=label("combination");?></option>
-         </select>
-         <button type="submit" class="btn btn-default"><?=label("ApplyFilter");?></button> 
-      </form> -->
+
       <table id="Table" class="table table-striped table-bordered" cellspacing="0" width="100%">
           <thead>
               <tr>
@@ -451,9 +435,9 @@ function PrintTicket() {
     setTimeout(function(){newWindow.print()}, 1000);
 
   //  $('.modal-body').removeAttr('id');
-  //
   //  window.print();
   //  $('.modal-body').attr('id', 'modal-body');
+  
 }
 
 
@@ -473,14 +457,6 @@ function PrintTicket() {
       echo form_open_multipart('productcontroller/add', $attributes);
       ?>
       <div class="modal-body">
-            <div class="form-group">
-             <label for="Type"><?=label("Type");?></label>
-             <select class="form-control" name="type" id="Type">
-               <option value="0"><?=label("Standard");?></option>
-               <option value="1"><?=label("Service");?></option>
-               <!-- <option value="2"><?=label("combination");?></option> -->
-             </select>
-            </div>
             <div class="form-group controls">
              <label for="ProductCode"><?=label("ProductCode");?></label>
              <input type="text" maxlength="30" Required name="code" class="form-control" id="ProductCode" placeholder="<?=label("ProductCode");?>">
@@ -499,41 +475,13 @@ function PrintTicket() {
                <?php endforeach;?>
             </select>
            </div>
-           <!-- <div class="form-group" id="supply">
-             <label for="Supplier"><?=label("Supplier");?></label>
-             <select class="form-control" name="supplier" id="Supplier">
-               <option><?=label("Supplier");?></option>
-               <?php foreach ($suppliers as $supplier):?>
-                  <option value="<?=$supplier->name;?>"><?=$supplier->name;?></option>
-               <?php endforeach;?>
-            </select>
-           </div> -->
-           <div class="form-group" id="pushaceP">
-             <label for="PurchasePrice"><?=label("PurchasePrice");?> (<?=$this->setting->currency;?>)</label>
-             <input type="number" step="any" value="0" Required name="cost" class="form-control" id="PurchasePrice" placeholder="<?=label("PurchasePrice");?>">
-           </div>
            <div class="form-group">
              <label for="Tax"><?=label("ProductTax");?></label>
              <input type="text" maxlength="10" name="tax" class="form-control" id="Tax" placeholder="<?=label("ProductTax");?>">
            </div>
            <div class="form-group">
-              <label for="taxType"><?=label("TaxMethod");?></label>
-              <select class="form-control" name="taxmethod" id="taxType">
-                <option value="0"><?=label("inclusive");?></option>
-                <option value="1"><?=label("exclusive");?></option>
-              </select>
-           </div>
-           <div class="form-group">
              <label for="Price"><?=label("Price");?> (<?=$this->setting->currency;?>)</label>
              <input type="number" step="any" Required name="price" class="form-control" id="Price" placeholder="<?=label("Price");?>">
-           </div>
-           <div class="form-group" id="UnitP">
-             <label for="Unit"><?=label("Unit");?></label>
-             <input type="text" step="any" name="unit" class="form-control" id="Unit" placeholder="<?=label("Unit");?>">
-           </div>
-           <div class="form-group" id="alertqty">
-             <label for="AlertQt"><?=label("AlertQt");?></label>
-             <input type="number" value="0" name="alertqt" class="form-control" id="AlertQt" placeholder="<?=label("AlertQt");?>">
            </div>
            <div class="form-group">
              <label for="ProductOptions"><?=label("ProductOptions");?></label>

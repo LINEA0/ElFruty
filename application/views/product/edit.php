@@ -1,58 +1,9 @@
-<script type="text/javascript">
-$(function() {
 
-   $('#Type').on('change', function() {
-     if( this.value == 1 ) //if service
-     {
-        $("#pushaceP").slideUp();
-        $("#alertqty").slideUp();
-        $("#supply").slideUp();
-        $("#UnitP").slideUp();
-     } else if ( this.value == 2 ) {
-        $("#pushaceP").slideUp();
-        $("#alertqty").slideUp();
-        $("#supply").slideUp();
-        $("#UnitP").slideUp();
-     } else {
-        $("#pushaceP").slideDown();
-        $("#alertqty").slideDown();
-        $("#supply").slideDown();
-        $("#UnitP").slideDown();
-     }
-   });
-   if( <?=$product->type !== null ? $product->type : 1;?> == 1 ) //if service
-   {
-     $("#pushaceP").slideUp();
-     $("#supply").slideUp();
-     $("#alertqty").slideUp();
-     $("#UnitP").slideUp();
-  } else if ( <?=$product->type?> == 2 ) {
-     $("#pushaceP").slideUp();
-     $("#alertqty").slideUp();
-     $("#supply").slideUp();
-     $("#UnitP").slideUp();
-   } else {
-     $("#pushaceP").slideDown();
-     $("#supply").slideDown();
-     $("#alertqty").slideDown();
-     $("#UnitP").slideDown();
-   }
-
-});
-</script>
 <div class="container container-small">
    <div class="row" style="margin-top:100px;">
       <a class="btn btn-default float-right" href="#" onclick="history.back(-1)"style="margin-bottom:10px;">
          <i class="fa fa-arrow-left"></i> <?=label("Back");?></a>
       <?php echo form_open_multipart('products/edit/'.$product->id); ?>
-         <div class="form-group">
-         <label for="Type"><?=label("Type");?></label>
-         <select class="form-control" name="type" id="Type">
-            <!-- <option value="0" <?=$product->type === 0 ? 'selected' : '';?>><?=label("Standard");?></option> -->
-            <option value="1" <?=$product->type === 1 || $product->type === null ? 'selected' : '';?>><?=label("Service");?></option>
-            <!-- <option value="2" <?=$product->type === 2 ? 'selected' : '';?>><?=label("combination");?></option> -->
-         </select>
-         </div>
          <div class="form-group">
          <label for="ProductCode"><?=label("ProductCode");?></label>
          <input type="text" name="code" maxlength="30" Required value="<?=$product->code;?>" class="form-control" id="ProductCode" placeholder="<?=label("ProductCode");?>">
@@ -71,41 +22,13 @@ $(function() {
             <?php endforeach;?>
          </select>
         </div>
-        <div class="form-group" id="supply">
-           <label for="Supplier"><?=label("Supplier");?></label>
-           <select class="form-control" name="supplier" id="Supplier">
-             <option><?=label("Supplier");?></option>
-             <?php foreach ($suppliers as $supplier):?>
-                <option <?=$product->supplier===$supplier->name ? 'selected' : '';?>><?=$supplier->name;?></option>
-             <?php endforeach;?>
-          </select>
-       </div>
-        <div class="form-group" id="pushaceP">
-         <label for="PurchasePrice"><?=label("PurchasePrice");?> (<?=$this->setting->currency;?>)</label>
-         <input type="number" step="any" Required name="cost" value="<?=$product->cost;?>" class="form-control" id="PurchasePrice" placeholder="<?=label("PurchasePrice");?>">
-        </div>
         <div class="form-group">
           <label for="Tax"><?=label("ProductTax");?></label>
           <input type="text" name="tax" maxlength="10" value="<?=$product->tax;?>" class="form-control" id="Tax" placeholder="<?=label("ProductTax");?>">
         </div>
         <div class="form-group">
-           <label for="taxType"><?=label("TaxMethod");?></label>
-           <select class="form-control" name="taxmethod" id="taxType">
-             <option value="0" <?=$product->taxmethod === 0 ? 'selected' : '';?>><?=label("inclusive");?></option>
-             <option value="1" <?=$product->taxmethod === 1 ? 'selected' : '';?>><?=label("exclusive");?></option>
-           </select>
-        </div>
-        <div class="form-group">
          <label for="Price"><?=label("Price");?> (<?=$this->setting->currency;?>)</label>
          <input type="number" step="any" Required name="price" value="<?=$product->price;?>" class="form-control" id="Price" placeholder="<?=label("Price");?>">
-        </div>
-        <div class="form-group" id="UnitP">
-          <label for="Unit"><?=label("Unit");?></label>
-          <input type="text" step="any" name="unit" value="<?=$product->unit;?>" class="form-control" id="Unit" placeholder="<?=label("Unit");?>">
-        </div>
-        <div class="form-group" id="alertqty">
-          <label for="AlertQt"><?=label("AlertQt");?></label>
-          <input type="number" value="<?=$product->alertqt;?>" name="alertqt" class="form-control" id="AlertQt" placeholder="<?=label("AlertQt");?>">
         </div>
         <div class="form-group">
           <label for="ProductOptions"><?=label("ProductOptions");?></label>

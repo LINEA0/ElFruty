@@ -25,7 +25,7 @@ class Products extends MY_Controller
       $this->view_data['typeF'] = $type;
         $this->view_data['categories'] = Category::all();
         $this->view_data['suppliers'] = Supplier::all();
-        $this->content_view = 'product/view';
+    $this->content_view = 'product/view';
     }
 
 
