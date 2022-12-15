@@ -1,5 +1,6 @@
 <!-- Page Content -->
 <div class="container">
+  <h3><?= label('Usuarios'); ?></h3>
   <div class="row" style="margin-top:100px;">
     <div class="col-md-12">
       <!-- tab navigation -->
