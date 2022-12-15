@@ -22,9 +22,8 @@
 		    </div>
       </div>
    </div>
-   <div class="row" style="margin-top:50px;">
+   <!-- <div class="row" style="margin-top:50px;">
       <div class="col-md-8">
-         <!-- chart container  -->
          <div class="statCart">
             <h3><?=label('monthlyStats');?></h3>
             <div style="width:100%">
@@ -33,15 +32,14 @@
          </div>
       </div>
       <div class="col-md-4">
-         <!-- pie container  -->
          <div class="statCart">
             <h3><?=label('TopProducts');?></h3>
             <div id="canvas-holder">
                <?= count($Top5product) >=5 ? '<canvas id="chart-area2" width="230" height="230" />' : '<h3 style="margin: 50px 0">'.label("EmptyList").'</h3>';?>
             </div>
-         </div>
+         </div> 
       </div>
-   </div>
+   </div> -->
    <?php if(count($Top5product) >=5) { ?>
    <div class="row" style="margin-top: 50px;">
      <div class="col-md-12">
